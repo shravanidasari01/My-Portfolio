@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shravani-Dasari Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1 style="font-family: 'Cookie', serif;
+                    font-weight: 400;
+                    font-style: normal;"><span>S</span>hravani</h1>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#about">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark fa-rotate-90 fa-lg " id="fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars bar" id="fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Aspiring Frontend Developer</p>
+                <h1>Hello, I am <span>Shravani Dasari</span></h1>
+                <p>Passionate about frontend development, I specialize in HTML, CSS, JavaScript, <br>and frameworks like
+                    Bootstrap and React.js. Eager to contribute <br> my skills to innovative web development projects.
+                    <br>Adopt at problem-solving, debugging, and optimizing <br>performance to ensure seamless user
+                    interactions. <br>Passionate about transforming ideas into functional, <br>high-performance, and
+                    scalable web applications.</p>
+            </div>
+        </div>
+    </div>
+   
+    <!------- about ------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo.jpg" alt="image" class="mypic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><i class="fa-brands fa-html5" style="color: #f91515;"></i>HTML</li>
+                            <li><i class="fa-brands fa-css3-alt" style="color: #528ef5;"></i>CSS</li>
+                            <li><i class="fa-brands fa-js" style="color: #FFD43B;"></i>JavaScript</li>
+                            <div class="side">
+                                <li><i class="fa-brands fa-react" style="color: #42d3f7;"></i>React Js</li>
+                                <li><i class="fa-brands fa-bootstrap" style="color: #B197FC;"></i>Bootstrap</li>
+                                <li><i class="fa-brands fa-java" style="color: #fc034e;"></i>Java</li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="tab-contents-2 tab-contents" id="experience">
+                        <ul>
+                            <li><span>Full-Stack Developer Intern<br>Scalefull Technologies | January 2025 -
+                                    Present</span></li>
+                            <li>Gaining hands-on experience in full-stack development, working on real-world projects.
+                            </li>
+                            <li>Developing and optimizing web applications using HTML, CSS, JavaScript, React, Node.js,
+                                and MongoDB.</li>
+                            <li>Collaborating with a team to improve performance, scalability, and user experience.</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents-2 tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-2025</span><br>MCA from Solapur University, Maharashtra</li>
+                            <li><span>2020-2023</span><br>BCA from Solapur University, Maharashtra</li>
+                            <li><span>2020</span><br>HSC from Maharashtra State Board</li>
+                            <li><span>2018</span><br>SSC from Maharashtra State Board</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------ Portfolio ------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+ <div class="work-list">
+    <div class="work">
+        <div class="layer">
+            <h2>Cafe Management System</h2>
+            <p>The Cafe Management System is a Java-based desktop application designed to streamline daily operations for small cafes. This system enables efficient order management, billing, and transaction tracking, improving workflow and reducing manual errors.</p>
+        </div>
+    </div>
+    <div class="work work-1">
+        <div class="layer">
+            <h2>Big Mart Sales Prediction</h2>
+            <p>Big Mart Sales Prediction is a machine learning project aimed at predicting sales for different products across various Big Mart stores.</p>
+        </div>
+    </div>
+    <div class="work work-2">
+        <div class="layer">
+            <h2>Pure Plate Delight</h2>
+            <p>Pure Plate Delight is a Satvik food ordering website designed to provide users with a seamless and healthy dining experience. Built using Java Spring Boot, MySQL, and Servlets, the platform allows customers to browse a curated menu of Satvik dishes, place orders, and manage their food preferences.</p>
+        </div>
+    </div>
+ </div>
+ <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!---------- Contact -------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>shravanidasari294@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9309403260</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shravani-dasari-803703259/"><i class="fa-brands fa-linkedin" style="color: #528ef5;"></i></a>
+                    <a href="https://github.com/shravanidasari01"><i class="fa-brands fa-square-github" style="color: rgb(255, 85, 255);"></i></a>
+                    <a href=#><i class="fa-brands fa-instagram" style="color: rgb(228, 62, 118);"></i></a>
+                    <a href=#><i class="fa-brands fa-facebook" style="color: #42d3f7;"></i></a>
+                </div>
+                <a href="ShravaniDasari.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+<form name="submit-to-google-sheet">
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="email" name="Email" placeholder="Your Email" required>
+    <textarea name="Message" rows="6"  placeholder="Your Message"></textarea>
+    <button type="submit" class="btn btn2">Submit</button>
+</form>
+<span id="msg"></span>
+        </div>
+    </div>
+   
+</div>
+<div class="copyright">
+    <p>Shravani Dasari Made with <i class="fa-solid fa-heart" style="color: #ff0000;"></i></p>
+</div>
+    <script src="app.js">
+       
+    </script>
+</body>
+
+</html>
+
